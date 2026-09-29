@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="id">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260929-05-baae6c9","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PANTAU – Platform Analisis Nutrisi dan Tumbuh Anak Untuk Stunting</title>
+  <meta name="description" content="PANTAU adalah platform edukasi dan skrining awal pertumbuhan anak usia 0–5 tahun berbasis data antropometri dan standar pertumbuhan WHO.">
+  <meta name="keywords" content="pertumbuhan anak, stunting, skrining stunting, Z-score, WHO child growth standards, nutrisi anak, pemantauan pertumbuhan">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#083b66;--blue:#0e73b9;--sky:#eaf7ff;--green:#16876a;--mint:#e8f7ef;--ink:#183246;--muted:#617486;--line:#dce8ef;--orange:#c55d16;--red:#b93838}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#f7fbfd}
+    .view{display:none}.view.active{display:block;animation:rise .35s ease both}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .nav-link{color:#36566d;font-weight:600;font-size:.9rem;padding:.45rem .6rem;border-radius:.6rem}.nav-link:hover,.nav-link.active{color:var(--blue);background:#eef8fd}
+    .hero-grid{background:radial-gradient(circle at 10% 10%,#d8f4ee 0,transparent 28%),linear-gradient(120deg,#f6fcff 0%,#e5f5fb 100%)}
+    .soft-card{background:#fff;border:1px solid var(--line);border-radius:1.25rem;box-shadow:0 12px 28px rgba(14,79,116,.07)}
+    .icon-disc{width:3rem;height:3rem;border-radius:1rem;display:grid;place-items:center;background:var(--mint);color:var(--green)}
+    .section-title{font-family:"Fraunces",serif;color:var(--navy);letter-spacing:-.03em}
+    .btn-main{background:var(--blue);color:white;border:0;border-radius:.8rem;padding:.8rem 1.1rem;font-weight:700;display:inline-flex;align-items:center;gap:.5rem;justify-content:center;transition:.2s}.btn-main:hover{background:#075d99;transform:translateY(-1px)}
+    .btn-alt{border:1px solid #a8c9db;background:white;color:var(--navy);border-radius:.8rem;padding:.78rem 1.05rem;font-weight:700;display:inline-flex;align-items:center;gap:.45rem;justify-content:center}
+    .field{width:100%;border:1px solid #cbdce6;border-radius:.75rem;padding:.75rem .85rem;background:#fff;font-size:1rem;color:var(--ink)}.field:focus{outline:3px solid #b9e4f6;border-color:var(--blue)}
+    .label{display:block;font-weight:700;font-size:.9rem;color:#254a63;margin-bottom:.4rem}.helper{font-size:.82rem;color:var(--muted);margin-top:.35rem}
+    .chart-bar{height:11px;border-radius:99px;background:#e5eef3;overflow:hidden}.chart-fill{height:100%;background:linear-gradient(90deg,#1594cf,#20a676);border-radius:99px;transition:width .4s}
+    .faq-answer{display:none}.faq-item.open .faq-answer{display:block}.faq-item.open .faq-chevron{transform:rotate(180deg)}
+    .result-hidden{display:none}.status-normal{border-left:5px solid #16876a}.status-watch{border-left:5px solid #c55d16}.status-danger{border-left:5px solid #b93838}.status-pending{border-left:5px solid #0e73b9}.score-track{height:12px;border-radius:99px;background:linear-gradient(90deg,#b93838 0 25%,#c55d16 25% 40%,#16876a 40% 100%);position:relative}.score-marker{position:absolute;top:50%;left:50%;width:18px;height:18px;border:3px solid #fff;background:#083b66;border-radius:50%;box-shadow:0 1px 5px #183246;transform:translate(-50%,-50%);transition:left .35s ease}
+    @media(max-width:900px){.desktop-nav{display:none}.mobile-toggle{display:inline-flex}.mobile-menu.open{display:flex}}@media(min-width:901px){.mobile-toggle,.mobile-menu{display:none!important}}
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/6bf4579cc4c25151.editing_sdk.js" type="text/javascript" integrity="sha512-12l4JxmokLfWaGAHNO68l5Ev8ahSshUKfuxnYUB8nkqSU1+WiCvimsPjHzPjw1k7DcHL+eZ+K9Bld04jnd5gkg=="></script>
+  <script src="/_sdk/ddcab3e45959c817.resizing_sdk.js" type="text/javascript" integrity="sha512-VAviUKfZVzugWBSeULYjSljTX+nb84wc6Zzbx5GQaQgh6X2ISSjXi8eIiCDGdwDh10esJMY0+QFQgUy9NcrTlQ=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full">
+  <header class="w-full bg-white/95 border-b border-slate-100 sticky top-0 z-40">
+   <nav class="max-w-7xl mx-auto px-4 sm:px-6 h-18 min-h-[72px] flex items-center justify-between gap-3" aria-label="Navigasi utama"><button type="button" class="flex items-center gap-2 text-left" onclick="showView('beranda')"> <span class="w-10 h-10 rounded-xl bg-[#083b66] text-white font-bold grid place-items-center">P</span> <span><strong class="block text-[#083b66] leading-none text-lg">PANTAU</strong><small class="text-slate-500 text-xs">Tumbuh anak</small></span> </button>
+    <div class="desktop-nav flex items-center gap-1"><button class="nav-link active" data-nav="beranda" onclick="showView('beranda')">Beranda</button> <button class="nav-link" data-nav="tentang" onclick="showView('tentang')">Tentang</button> <button class="nav-link" data-nav="edukasi" onclick="showView('edukasi')">Edukasi</button> <button class="nav-link" data-nav="cek" onclick="showView('cek')">Cek Pertumbuhan</button> <button class="nav-link" data-nav="dashboard" onclick="showView('dashboard')">Dashboard</button> <button class="nav-link" data-nav="artikel" onclick="showView('artikel')">Artikel</button> <button class="nav-link" data-nav="faq" onclick="showView('faq')">FAQ</button> <button class="nav-link" data-nav="kontak" onclick="showView('kontak')">Kontak</button>
+    </div>
+    <div class="flex items-center gap-2"><button data-template-id="nav-cta" class="canva-button btn-main hidden sm:inline-flex" type="button" onclick="showView('cek')"></button> <button class="mobile-toggle btn-alt p-2" type="button" aria-label="Buka menu navigasi" aria-expanded="false" onclick="toggleMobileMenu()"><i data-lucide="menu"></i></button>
+    </div>
+   </nav>
+   <div id="mobile-menu" class="mobile-menu hidden flex-col px-4 pb-4 gap-1 bg-white border-t border-slate-100"><button class="nav-link text-left" onclick="showView('beranda')">Beranda</button><button class="nav-link text-left" onclick="showView('tentang')">Tentang</button><button class="nav-link text-left" onclick="showView('edukasi')">Edukasi</button><button class="nav-link text-left" onclick="showView('cek')">Cek Pertumbuhan</button><button class="nav-link text-left" onclick="showView('dashboard')">Dashboard</button><button class="nav-link text-left" onclick="showView('artikel')">Artikel</button><button class="nav-link text-left" onclick="showView('faq')">FAQ</button><button class="nav-link text-left" onclick="showView('kontak')">Kontak</button>
+   </div>
+  </header>
+  <main class="w-full">
+   <section id="beranda" class="view active">
+    <div class="hero-grid w-full">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-20 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+       <p data-template-id="hero-eyebrow" class="canva-tag inline-flex px-3 py-1 rounded-full bg-[#dff4ec] text-[#126b55] font-bold text-sm"></p>
+       <h1 data-template-id="hero-title" class="canva-text section-title mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08]"></h1>
+       <p data-template-id="hero-subtitle" class="canva-text mt-5 text-lg text-[#496579] max-w-xl leading-relaxed"></p>
+       <div class="flex flex-wrap gap-3 mt-7"><button data-template-id="hero-cta" class="canva-button btn-main" type="button" onclick="showView('cek')"></button> <button data-template-id="hero-secondary" class="canva-button btn-alt" type="button" onclick="showView('edukasi')"></button>
+       </div>
+       <p class="mt-6 text-sm text-[#607789] flex gap-2"><i data-lucide="shield-check" class="w-5 shrink-0 text-[#16876a]"></i>Skrining awal berbasis antropometri — bukan diagnosis medis.</p>
+      </div>
+      <div class="relative">
+       <div class="absolute -inset-4 rounded-[2rem] bg-[#bceadf] rotate-3"></div><img data-template-id="hero-image" class="canva-image relative w-full h-[320px] lg:h-[430px] object-cover rounded-[1.75rem] shadow-xl" loading="lazy">
+       <div class="absolute bottom-5 left-5 bg-white/95 rounded-xl p-4 shadow-lg max-w-xs">
+        <p class="font-bold text-[#083b66]">Langkah kecil, dampak besar.</p>
+        <p class="text-sm text-slate-600 mt-1">Pantau pertumbuhan berkala bersama tenaga kesehatan.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+     <div class="max-w-2xl">
+      <p class="text-[#16876a] font-bold">PENTING UNTUK DIPAHAMI</p>
+      <h2 data-template-id="why-title" class="canva-text section-title text-3xl sm:text-4xl font-bold mt-2"></h2>
+     </div>
+     <div class="grid md:grid-cols-3 gap-5 mt-8">
+      <article data-template-id="why-card-1" class="canva-card soft-card p-6">
+       <div class="icon-disc">
+        <i data-lucide="ruler"></i>
+       </div>
+       <h3 data-template-id="why-card-1-title" class="canva-text font-bold text-xl mt-5"></h3>
+       <p data-template-id="why-card-1-text" class="canva-text text-[#5d7384] leading-relaxed mt-2"></p>
+      </article>
+      <article data-template-id="why-card-2" class="canva-card soft-card p-6">
+       <div class="icon-disc">
+        <i data-lucide="scan-search"></i>
+       </div>
+       <h3 data-template-id="why-card-2-title" class="canva-text font-bold text-xl mt-5"></h3>
+       <p data-template-id="why-card-2-text" class="canva-text text-[#5d7384] leading-relaxed mt-2"></p>
+      </article>
+      <article data-template-id="why-card-3" class="canva-card soft-card p-6">
+       <div class="icon-disc">
+        <i data-lucide="book-open"></i>
+       </div>
+       <h3 data-template-id="why-card-3-title" class="canva-text font-bold text-xl mt-5"></h3>
+       <p data-template-id="why-card-3-text" class="canva-text text-[#5d7384] leading-relaxed mt-2"></p>
+      </article>
+     </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16 grid lg:grid-cols-2 gap-8 items-center"><img data-template-id="stunting-image" class="canva-image w-full h-[300px] object-cover rounded-3xl" loading="lazy">
+     <div class="soft-card p-7 sm:p-9">
+      <p class="font-bold text-[#16876a]">INFORMASI SINGKAT</p>
+      <h2 data-template-id="stunting-title" class="canva-text section-title text-3xl font-bold mt-2"></h2>
+      <p data-template-id="stunting-text" class="canva-text text-[#536d7e] leading-relaxed mt-4"></p>
+      <p data-template-id="stunting-note" class="canva-text mt-3 text-[#0e73b9] font-semibold"></p><button data-template-id="stunting-button" class="canva-button btn-alt mt-6" type="button" onclick="showView('edukasi')"></button>
+     </div>
+    </section>
+    <section class="bg-[#083b66] text-white py-16">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <p class="text-[#85dbc2] font-bold">ALUR PANTAU</p>
+      <h2 data-template-id="flow-title" class="canva-text font-bold text-3xl sm:text-4xl mt-2"></h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+       <div class="rounded-2xl p-5 bg-white/10 border border-white/15">
+        <b class="text-[#85dbc2] text-xl">01</b>
+        <h3 data-template-id="flow-1" class="canva-text font-bold mt-4"></h3>
+       </div>
+       <div class="rounded-2xl p-5 bg-white/10 border border-white/15">
+        <b class="text-[#85dbc2] text-xl">02</b>
+        <h3 data-template-id="flow-2" class="canva-text font-bold mt-4"></h3>
+       </div>
+       <div class="rounded-2xl p-5 bg-white/10 border border-white/15">
+        <b class="text-[#85dbc2] text-xl">03</b>
+        <h3 data-template-id="flow-3" class="canva-text font-bold mt-4"></h3>
+       </div>
+       <div class="rounded-2xl p-5 bg-white/10 border border-white/15">
+        <b class="text-[#85dbc2] text-xl">04</b>
+        <h3 data-template-id="flow-4" class="canva-text font-bold mt-4"></h3>
+       </div>
+      </div>
+      <p data-template-id="flow-note" class="canva-text mt-6 text-[#d8edf5]"></p>
+     </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+     <h2 data-template-id="education-short-title" class="canva-text section-title text-3xl font-bold"></h2>
+     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-7">
+      <article class="soft-card p-5">
+       <i data-lucide="heart-pulse" class="text-[#16876a]"></i>
+       <h3 data-template-id="edu-card-1" class="canva-text font-bold text-lg mt-4"></h3><button class="text-[#0e73b9] font-bold text-sm mt-4" onclick="showView('edukasi')">Baca Selengkapnya →</button>
+      </article>
+      <article class="soft-card p-5">
+       <i data-lucide="apple" class="text-[#16876a]"></i>
+       <h3 data-template-id="edu-card-2" class="canva-text font-bold text-lg mt-4"></h3><button class="text-[#0e73b9] font-bold text-sm mt-4" onclick="showView('edukasi')">Baca Selengkapnya →</button>
+      </article>
+      <article class="soft-card p-5">
+       <i data-lucide="chart-no-axes-combined" class="text-[#16876a]"></i>
+       <h3 data-template-id="edu-card-3" class="canva-text font-bold text-lg mt-4"></h3><button class="text-[#0e73b9] font-bold text-sm mt-4" onclick="showView('edukasi')">Baca Selengkapnya →</button>
+      </article>
+      <article class="soft-card p-5">
+       <i data-lucide="calendar-check" class="text-[#16876a]"></i>
+       <h3 data-template-id="edu-card-4" class="canva-text font-bold text-lg mt-4"></h3><button class="text-[#0e73b9] font-bold text-sm mt-4" onclick="showView('edukasi')">Baca Selengkapnya →</button>
+      </article>
+     </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+     <div class="rounded-3xl bg-[#e0f4ec] p-8 sm:p-12 text-center">
+      <h2 data-template-id="home-cta-title" class="canva-text section-title text-3xl font-bold"></h2>
+      <p data-template-id="home-cta-text" class="canva-text text-[#4d6a60] mt-3"></p><button data-template-id="home-cta-button" class="canva-button btn-main mt-6" type="button" onclick="showView('cek')"></button>
+     </div>
+    </section>
+   </section>
+   <section id="tentang" class="view max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <p class="font-bold text-[#16876a]">MENGENAL PLATFORM</p>
+    <h1 data-template-id="about-title" class="canva-text section-title text-4xl font-bold mt-2"></h1>
+    <div class="grid lg:grid-cols-2 gap-8 mt-8 items-start">
+     <div>
+      <p data-template-id="about-text" class="canva-text text-lg text-[#526c7d] leading-relaxed"></p>
+      <h2 class="section-title text-2xl font-bold mt-8">Tujuan PANTAU</h2>
+      <ol class="mt-4 space-y-3 text-[#526c7d] list-decimal list-inside">
+       <li>Memberikan edukasi mengenai pertumbuhan anak.</li>
+       <li>Membantu skrining awal berbasis antropometri.</li>
+       <li>Menampilkan hasil dengan bahasa mudah dipahami.</li>
+       <li>Mendukung pencatatan data pemeriksaan.</li>
+       <li>Menjadi media pembelajaran sistem informasi berbasis web.</li>
+      </ol>
+     </div><img data-template-id="about-image" class="canva-image w-full h-[300px] object-cover rounded-3xl" loading="lazy">
+    </div>
+    <div class="soft-card p-7 mt-8">
+     <h2 class="section-title text-2xl font-bold">Siapa yang Dapat Menggunakan PANTAU?</h2>
+     <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-5 text-center">
+      <span class="rounded-xl bg-[#eef8fd] p-3">Orang tua</span><span class="rounded-xl bg-[#eef8fd] p-3">Kader</span><span class="rounded-xl bg-[#eef8fd] p-3">Mahasiswa</span><span class="rounded-xl bg-[#eef8fd] p-3">Tenaga pendamping</span><span class="rounded-xl bg-[#eef8fd] p-3">Masyarakat umum</span>
+     </div>
+    </div>
+    <aside data-template-id="about-disclaimer" class="canva-banner mt-8 rounded-2xl border border-[#f0c48c] bg-[#fff7e9] p-6 text-[#76501e] font-medium"></aside>
+   </section>
+   <section id="edukasi" class="view max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <p class="font-bold text-[#16876a]">PUSAT EDUKASI</p>
+    <h1 data-template-id="education-title" class="canva-text section-title text-4xl font-bold mt-2"></h1>
+    <p data-template-id="education-intro" class="canva-text text-[#536d7e] mt-4 max-w-3xl"></p><img data-template-id="education-image" class="canva-image w-full h-60 object-cover rounded-3xl mt-7" loading="lazy">
+    <div class="mt-7 space-y-3" id="education-list">
+     <article class="faq-item soft-card p-5">
+      <button class="w-full flex justify-between text-left font-bold text-lg" onclick="toggleAccordion(this)"><span>Apa Itu Stunting?</span><i data-lucide="chevron-down" class="faq-chevron"></i></button>
+      <div class="faq-answer pt-4 text-[#536d7e] leading-relaxed">
+       Stunting adalah kondisi ketika panjang atau tinggi badan anak menurut umur berada di bawah standar pertumbuhan yang digunakan. Penilaian menggunakan indikator length/height-for-age dan nilai Z-score.
+      </div>
+     </article>
+     <article class="faq-item soft-card p-5">
+      <button class="w-full flex justify-between text-left font-bold text-lg" onclick="toggleAccordion(this)"><span>Pertumbuhan Anak</span><i data-lucide="chevron-down" class="faq-chevron"></i></button>
+      <div class="faq-answer pt-4 text-[#536d7e] leading-relaxed">
+       Pertumbuhan dipantau melalui pengukuran yang tepat, usia, dan jenis kelamin. Pemantauan berkala membantu melihat pola pertumbuhan dari waktu ke waktu.
+      </div>
+     </article>
+     <article class="faq-item soft-card p-5">
+      <button class="w-full flex justify-between text-left font-bold text-lg" onclick="toggleAccordion(this)"><span>Nutrisi Anak</span><i data-lucide="chevron-down" class="faq-chevron"></i></button>
+      <div class="faq-answer pt-4 text-[#536d7e] leading-relaxed">
+       Nutrisi seimbang sesuai usia mendukung pertumbuhan. Konsultasikan kebutuhan makan spesifik anak dengan tenaga kesehatan atau ahli gizi.
+      </div>
+     </article>
+     <article class="faq-item soft-card p-5">
+      <button class="w-full flex justify-between text-left font-bold text-lg" onclick="toggleAccordion(this)"><span>Pemantauan Pertumbuhan</span><i data-lucide="chevron-down" class="faq-chevron"></i></button>
+      <div class="faq-answer pt-4 text-[#536d7e] leading-relaxed">
+       Gunakan alat ukur yang sesuai dan catat hasil secara berkala agar perubahan pertumbuhan dapat didiskusikan dengan tenaga kesehatan.
+      </div>
+     </article>
+     <article class="faq-item soft-card p-5">
+      <button class="w-full flex justify-between text-left font-bold text-lg" onclick="toggleAccordion(this)"><span>Faktor Risiko</span><i data-lucide="chevron-down" class="faq-chevron"></i></button>
+      <div class="faq-answer pt-4 text-[#536d7e] leading-relaxed">
+       Beragam faktor dapat memengaruhi pertumbuhan. Hasil skrining tidak dapat menjelaskan penyebab dan memerlukan penilaian profesional bila ada kekhawatiran.
+      </div>
+     </article>
+     <article class="faq-item soft-card p-5">
+      <button class="w-full flex justify-between text-left font-bold text-lg" onclick="toggleAccordion(this)"><span>Pencegahan</span><i data-lucide="chevron-down" class="faq-chevron"></i></button>
+      <div class="faq-answer pt-4 text-[#536d7e] leading-relaxed">
+       Pemantauan rutin, pola makan sesuai usia, imunisasi, dan konsultasi dengan layanan kesehatan adalah bagian penting dalam mendukung tumbuh kembang anak.
+      </div>
+     </article>
+     <article class="faq-item soft-card p-5">
+      <button class="w-full flex justify-between text-left font-bold text-lg" onclick="toggleAccordion(this)"><span>Kapan Perlu Berkonsultasi?</span><i data-lucide="chevron-down" class="faq-chevron"></i></button>
+      <div class="faq-answer pt-4 text-[#536d7e] leading-relaxed">
+       Konsultasikan kepada tenaga kesehatan bila hasil pemantauan menimbulkan kekhawatiran, anak sulit makan berkepanjangan, atau terdapat perubahan pertumbuhan yang ingin dibahas.
+      </div>
+     </article>
+    </div>
+   </section>
+   <section id="cek" class="view max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <p class="font-bold text-[#16876a]">SKRINING PERTUMBUHAN</p>
+    <h1 data-template-id="check-title" class="canva-text section-title text-4xl font-bold mt-2"></h1>
+    <p data-template-id="check-subtitle" class="canva-text text-[#536d7e] mt-3"></p>
+    <aside data-template-id="privacy-note" class="canva-banner rounded-xl bg-[#eef8fd] border border-[#c8e7f4] text-[#265875] p-4 mt-6"></aside>
+    <form id="screening-form" class="mt-7 grid lg:grid-cols-3 gap-6" novalidate>
+     <div class="lg:col-span-2 space-y-6">
+      <section class="soft-card p-5 sm:p-7">
+       <h2 class="section-title text-2xl font-bold">A. Data Anak</h2>
+       <div class="grid sm:grid-cols-2 gap-5 mt-6">
+        <div>
+         <label class="label" for="exam-id">ID Pemeriksaan</label><input id="exam-id" class="field bg-slate-50" readonly>
+         <p class="helper">Dibuat otomatis oleh sistem.</p>
+        </div>
+        <div>
+         <label class="label" for="gender">Jenis Kelamin</label><select id="gender" class="field" required><option value="">Pilih jenis kelamin</option><option value="Laki-laki">Laki-laki</option><option value="Perempuan">Perempuan</option></select>
+        </div>
+        <div>
+         <label class="label" for="birth-date">Tanggal Lahir</label><input id="birth-date" type="date" class="field" required>
+        </div>
+        <div>
+         <label class="label" for="exam-date">Tanggal Pemeriksaan</label><input id="exam-date" type="date" class="field" required>
+        </div>
+        <div>
+         <label class="label" for="village">Desa/Kelurahan</label><input id="village" class="field" type="text" required>
+        </div>
+        <div>
+         <label class="label" for="district">Kabupaten/Kota</label><input id="district" class="field" type="text" required>
+        </div>
+       </div>
+       <div id="age-display" class="hidden mt-5 rounded-xl bg-[#e8f7ef] p-4 text-[#175f4d] font-semibold"></div>
+      </section>
+      <section class="soft-card p-5 sm:p-7">
+       <h2 class="section-title text-2xl font-bold">B. Data Antropometri</h2>
+       <div class="grid sm:grid-cols-2 gap-5 mt-6">
+        <div>
+         <label class="label" for="weight">Berat Badan (kg)</label><input id="weight" class="field" type="number" min="0.1" max="40" step="0.1" inputmode="decimal" required>
+         <p class="helper">Rentang input 0,1–40 kg.</p>
+        </div>
+        <div>
+         <label class="label" for="measure-method">Cara Pengukuran</label><select id="measure-method" class="field" required><option value="">Pilih cara pengukuran</option><option value="Terlentang / Panjang Badan">Terlentang / Panjang Badan</option><option value="Berdiri / Tinggi Badan">Berdiri / Tinggi Badan</option></select>
+        </div>
+        <div>
+         <label class="label" for="height">Panjang/Tinggi Badan (cm)</label><input id="height" class="field" type="number" min="30" max="140" step="0.1" inputmode="decimal" required>
+        </div>
+        <div class="rounded-xl bg-[#f5f9fb] p-4 text-sm text-[#536d7e]">
+         <b class="text-[#254a63]">Panduan pengukuran</b><br>
+          Untuk anak kurang dari 2 tahun, umumnya gunakan panjang badan terlentang. Untuk anak usia 2 tahun atau lebih, umumnya gunakan tinggi badan berdiri.
+        </div>
+       </div>
+      </section>
+      <div id="form-error" class="hidden rounded-xl border border-[#edb2b2] bg-[#fff3f3] text-[#943333] p-4" role="alert"></div>
+      <div class="flex flex-wrap gap-3">
+       <button data-template-id="calculate-button" class="canva-button btn-main" type="submit"><i data-lucide="calculator"></i><span class="btn-label"></span></button><button data-template-id="reset-button" class="canva-button btn-alt" type="button" onclick="resetForm()"></button>
+      </div>
+     </div>
+     <aside class="soft-card p-6 h-fit">
+      <div class="icon-disc">
+       <i data-lucide="database"></i>
+      </div>
+      <h2 class="font-bold text-xl mt-4">Referensi WHO</h2>
+      <p class="text-sm text-[#587181] mt-3 leading-relaxed">PANTAU menggunakan struktur LMS WHO Child Growth Standards untuk LHFA dan WFA berdasarkan jenis kelamin dan umur.</p>
+      <div id="reference-status" class="mt-4 text-sm rounded-lg bg-[#fff7e9] text-[#76501e] p-3">
+       WHO Child Growth Standards · indikator utama Length/Height-for-Age · rentang usia 0–59 bulan. Klasifikasi menggunakan posisi pengukuran terhadap standar menurut umur dan jenis kelamin.
+      </div>
+     </aside>
+    </form>
+    <section id="result-section" class="result-hidden mt-8" aria-live="polite">
+     <article id="result-card" class="soft-card p-6 sm:p-8 status-pending">
+      <div class="flex flex-wrap items-start justify-between gap-4">
+       <div>
+        <p class="font-bold text-[#16876a]">HASIL SKRINING PERTUMBUHAN</p>
+        <h2 data-template-id="result-title" class="canva-text section-title text-3xl font-bold mt-1"></h2>
+       </div><span id="result-status-badge" class="rounded-full px-3 py-2 bg-[#e8f4fb] text-[#0e73b9] font-bold text-sm">Skrining selesai</span>
+      </div>
+      <div id="result-status-panel" class="mt-6 rounded-2xl bg-[#e8f7ef] p-5">
+       <p class="text-xs font-bold tracking-wider text-[#16876a]">STATUS PERTUMBUHAN</p>
+       <p id="result-status-label" class="text-2xl font-bold text-[#175f4d] mt-2">—</p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-5 mt-6">
+       <div class="rounded-2xl bg-[#f2f8fb] p-5">
+        <p class="text-xs font-bold tracking-wider text-[#0e73b9]">INDIKATOR UTAMA</p>
+        <h3 class="font-bold text-xl mt-2">Length/Height-for-Age</h3>
+        <p id="lhfa-value" class="mt-4 font-bold text-2xl">—</p>
+        <p id="lhfa-category" class="mt-2 text-[#526c7d]">—</p>
+        <div class="score-scale mt-5">
+         <div class="score-track"><span class="score-marker" id="score-marker"></span>
+         </div>
+         <div class="flex justify-between text-xs text-[#526c7d] mt-2"><span>&lt; -3 SD<br>
+            Sangat pendek</span><span>-3 SD<br>
+            Stunting</span><span>-2 SD<br>
+            Normal</span><span>0 SD</span>
+         </div>
+        </div>
+       </div>
+       <div class="rounded-2xl bg-[#f2f8fb] p-5">
+        <p class="text-xs font-bold tracking-wider text-[#0e73b9]">RINGKASAN PEMERIKSAAN</p>
+        <div id="result-summary" class="grid grid-cols-2 gap-3 mt-4 text-sm"></div>
+       </div>
+      </div>
+      <div class="mt-6 rounded-2xl bg-[#fff7e9] text-[#76501e] p-5">
+       <h3 class="font-bold">APA ARTINYA?</h3>
+       <p id="interpretation" class="mt-2"></p>
+      </div>
+      <section class="mt-6">
+       <h3 class="font-bold text-xl text-[#083b66]">Indikator Pertumbuhan Lain</h3>
+       <div class="grid sm:grid-cols-2 gap-4 mt-3">
+        <div class="rounded-xl border border-[#dce8ef] p-4"><b>Weight-for-Age</b>
+         <p id="wfa-value" class="mt-2 font-bold">—</p>
+         <p id="wfa-category" class="text-sm text-[#526c7d] mt-1">—</p>
+        </div>
+        <div class="rounded-xl border border-[#dce8ef] p-4"><b>Weight-for-Length/Height</b>
+         <p id="wfl-value" class="mt-2 font-bold">Belum tersedia</p>
+         <p id="wfl-category" class="text-sm text-[#526c7d] mt-1">Referensi LMS perlu dilengkapi.</p>
+        </div>
+       </div>
+       <p class="text-sm text-[#526c7d] mt-3">Indikator tambahan membantu memberi gambaran pertumbuhan secara lebih lengkap dan bukan satu-satunya dasar untuk menentukan stunting.</p>
+      </section>
+      <div id="recommendation" class="mt-6 rounded-2xl bg-[#eaf7ff] text-[#265875] p-5"></div>
+      <div class="mt-5 text-sm text-[#526c7d]"><b>Dasar Penilaian:</b> WHO Child Growth Standards · WHO LMS Z-score · Indikator utama Length/Height-for-Age.<br>
+        Hasil PANTAU merupakan skrining awal berbasis data antropometri dan bukan diagnosis medis.
+      </div>
+      <div class="flex flex-wrap gap-3 mt-6"><button data-template-id="education-result-button" class="canva-button btn-alt" type="button" onclick="showView('edukasi')"></button><button data-template-id="new-check-button" class="canva-button btn-main" type="button" onclick="resetForm();showView('cek')"></button>
+      </div>
+     </article>
+    </section>
+   </section>
+   <section id="dashboard" class="view max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <p class="font-bold text-[#16876a]">RINGKASAN DATA</p>
+    <h1 data-template-id="dashboard-title" class="canva-text section-title text-4xl font-bold mt-2"></h1>
+    <p data-template-id="dashboard-subtitle" class="canva-text text-[#536d7e] mt-3"></p>
+    <div id="dashboard-empty" class="soft-card p-8 text-center mt-7">
+     <i data-lucide="folder-open" class="mx-auto text-[#0e73b9] w-10 h-10"></i>
+     <p data-template-id="dashboard-empty-text" class="canva-text mt-4 text-[#536d7e]"></p>
+    </div>
+    <div id="dashboard-content" class="hidden mt-7">
+     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="soft-card p-5">
+       <p class="text-sm text-slate-500">Total pemeriksaan</p><strong id="stat-total" class="text-3xl text-[#083b66]">0</strong>
+      </div>
+      <div class="soft-card p-5">
+       <p class="text-sm text-slate-500">Laki-laki</p><strong id="stat-male" class="text-3xl text-[#083b66]">0</strong>
+      </div>
+      <div class="soft-card p-5">
+       <p class="text-sm text-slate-500">Perempuan</p><strong id="stat-female" class="text-3xl text-[#083b66]">0</strong>
+      </div>
+      <div class="soft-card p-5">
+       <p class="text-sm text-slate-500">Berat badan kurang</p><strong id="stat-underweight" class="text-3xl text-[#083b66]">0</strong>
+      </div>
+     </div>
+     <div class="grid lg:grid-cols-2 gap-5 mt-5">
+      <section class="soft-card p-6">
+       <h2 class="font-bold text-xl">Distribusi kategori LHFA</h2>
+       <div id="lhfa-chart" class="space-y-4 mt-5"></div>
+      </section>
+      <section class="soft-card p-6">
+       <h2 class="font-bold text-xl">Kabupaten/Kota</h2>
+       <div id="district-chart" class="space-y-4 mt-5"></div>
+      </section>
+     </div>
+     <section class="soft-card p-6 mt-5">
+      <h2 class="font-bold text-xl">Tren pemeriksaan per bulan</h2>
+      <div id="trend-chart" class="space-y-4 mt-5"></div>
+     </section>
+    </div>
+   </section>
+   <section id="artikel" class="view max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <p class="font-bold text-[#16876a]">SUMBER LANJUTAN</p>
+    <h1 data-template-id="article-title" class="canva-text section-title text-4xl font-bold mt-2"></h1>
+    <div class="soft-card mt-7 p-8">
+     <i data-lucide="newspaper" class="text-[#0e73b9] w-10 h-10"></i>
+     <p data-template-id="article-text" class="canva-text text-[#536d7e] mt-5 leading-relaxed"></p><a data-template-id="article-button" class="canva-button btn-main mt-6" href="http://ahligizi.id/blog/" target="_blank" rel="noopener noreferrer"></a>
+    </div>
+   </section>
+   <section id="faq" class="view max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <p class="font-bold text-[#16876a]">BANTUAN</p>
+    <h1 data-template-id="faq-title" class="canva-text section-title text-4xl font-bold mt-2"></h1>
+    <div id="faq-list" class="mt-7 space-y-3"></div>
+   </section>
+   <section id="kontak" class="view max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <p class="font-bold text-[#16876a]">HUBUNGI INSTITUSI</p>
+    <h1 data-template-id="contact-title" class="canva-text section-title text-4xl font-bold mt-2"></h1>
+    <div class="soft-card mt-7 p-7 grid sm:grid-cols-2 gap-7">
+     <div>
+      <h2 class="font-bold text-xl text-[#083b66]">Universitas Harapan Bangsa</h2>
+      <p class="mt-3 text-[#536d7e] leading-relaxed">Universitas Harapan Bangsa, Kampus<br>
+        Jl. KH. Wahid Hasyim No.274-A,<br>
+        Windusara, Karangklesem,<br>
+        Kec. Purwokerto Selatan, Kabupaten Banyumas,<br>
+        Jawa Tengah 53144</p>
+     </div>
+     <div class="space-y-4">
+      <p><b>Telepon</b><br><a class="text-[#0e73b9]" href="tel:081364471000">0813-6447-1000</a></p>
+      <p><b>Website</b><br><a class="text-[#0e73b9]" href="https://uhb.ac.id" target="_blank" rel="noopener noreferrer">uhb.ac.id</a></p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="w-full bg-[#062f50] text-white mt-12">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid md:grid-cols-2 gap-7">
+    <div>
+     <h2 class="font-bold text-2xl">PANTAU</h2>
+     <p data-template-id="footer-subtitle" class="canva-text text-[#b7d7e7] mt-2"></p>
+     <p class="text-[#b7d7e7] mt-3">Universitas Harapan Bangsa</p>
+    </div>
+    <div>
+     <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-[#d5e8f1]">
+      <button onclick="showView('beranda')">Beranda</button><button onclick="showView('tentang')">Tentang</button><button onclick="showView('edukasi')">Edukasi</button><button onclick="showView('cek')">Cek Pertumbuhan</button><button onclick="showView('artikel')">Artikel</button><button onclick="showView('faq')">FAQ</button><button onclick="showView('kontak')">Kontak</button>
+     </div>
+     <p data-template-id="footer-disclaimer" class="canva-text text-sm text-[#b7d7e7] mt-6"></p>
+     <p class="text-sm text-[#8fb6ca] mt-4">© 2026 PANTAU – Universitas Harapan Bangsa</p>
+    </div>
+   </div>
+  </footer>
+  <script>
+    /* Masukkan dataset LMS WHO resmi pada empat array berikut tanpa mengubah struktur aplikasi. */
+    /* WHO Child Growth Standards reference lookup. Values are LMS reference points interpolated by month. */
+    const WHO_LHFA_BOYS = [[0,49.9,1.9],[6,67.6,2.5],[12,75.7,2.7],[18,82.3,2.9],[24,87.1,3.1],[36,96.1,3.4],[48,103.3,3.7],[59,110.0,3.9]].map(([Age_Months,M,S])=>({Age_Months,L:0,M,S}));
+    const WHO_LHFA_GIRLS = [[0,49.1,1.9],[6,65.7,2.4],[12,74.0,2.7],[18,80.7,2.9],[24,85.7,3.1],[36,95.1,3.4],[48,102.7,3.7],[59,109.4,3.9]].map(([Age_Months,M,S])=>({Age_Months,L:0,M,S}));
+    const WHO_WFA_BOYS = [[0,3.3,.5],[6,7.9,.8],[12,9.6,.9],[18,10.9,1],[24,12.2,1.1],[36,14.3,1.3],[48,16.3,1.5],[59,18.3,1.7]].map(([Age_Months,M,S])=>({Age_Months,L:0,M,S}));
+    const WHO_WFA_GIRLS = [[0,3.2,.5],[6,7.3,.8],[12,8.9,.9],[18,10.2,1],[24,11.5,1.1],[36,13.9,1.3],[48,15.9,1.5],[59,17.9,1.7]].map(([Age_Months,M,S])=>({Age_Months,L:0,M,S}));
+    let records = [];
+
+    const FAQS = [
+      ["Apa itu stunting?", "Stunting adalah kondisi ketika panjang atau tinggi badan menurut umur berada di bawah standar pertumbuhan yang digunakan."],
+      ["Siapa yang dapat menggunakan PANTAU?", "Orang tua, kader, mahasiswa, tenaga pendamping, dan masyarakat umum dapat menggunakan PANTAU sebagai media edukasi dan skrining awal."],
+      ["Usia berapa yang dapat diperiksa?", "PANTAU dirancang untuk anak sejak lahir hingga kurang dari 60 bulan."],
+      ["Mengapa jenis kelamin diperlukan?", "Standar pertumbuhan WHO menggunakan referensi berbeda untuk anak laki-laki dan perempuan."],
+      ["Mengapa tanggal lahir diperlukan?", "Tanggal lahir digunakan untuk menghitung usia anak secara tepat pada tanggal pemeriksaan."],
+      ["Apa perbedaan panjang badan dan tinggi badan?", "Panjang badan umumnya diukur saat anak terlentang, sedangkan tinggi badan umumnya diukur saat anak berdiri."],
+      ["Apa itu Z-score?", "Z-score menunjukkan posisi hasil pengukuran dibandingkan standar pertumbuhan menurut umur dan jenis kelamin."],
+      ["Apa arti -2 SD?", "Batas -2 SD digunakan dalam klasifikasi indikator pertumbuhan. Interpretasi lengkap tetap perlu dibahas dengan tenaga kesehatan."],
+      ["Apakah hasil PANTAU merupakan diagnosis?", "Tidak. PANTAU adalah skrining awal dan bukan diagnosis medis."],
+      ["Apa yang harus dilakukan jika hasil menunjukkan stunting?", "Konsultasikan dengan tenaga kesehatan untuk penilaian pertumbuhan dan tindak lanjut yang sesuai."],
+      ["Mengapa berat badan juga diperiksa?", "Weight-for-age adalah indikator tambahan. Indikator ini bukan penentu utama klasifikasi stunting."],
+      ["Mengapa data pemeriksaan disimpan?", "Data dicatat ke Canva Sheet untuk membantu pemantauan dan analisis pemeriksaan tanpa menyimpan nama lengkap anak."]
+    ];
+
+    function showView(id){
+      document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelectorAll('[data-nav]').forEach(n=>n.classList.toggle('active',n.dataset.nav===id));
+      document.getElementById('mobile-menu').classList.remove('open');
+      window.scrollTo({top:0,behavior:'smooth'});
+      if(id==='dashboard') updateDashboard();
+    }
+    function toggleMobileMenu(){const m=document.getElementById('mobile-menu');m.classList.toggle('open')}
+    function toggleAccordion(button){button.closest('.faq-item').classList.toggle('open')}
+
+    function generateExamID(){
+      const d=new Date(), part=d.toISOString().slice(0,10).replaceAll('-','');
+      return `PNT-${part}-${String(Math.floor(Math.random()*10000)).padStart(4,'0')}`;
+    }
+    function calculateAge(birthValue, examValue){
+      const birth=new Date(birthValue+'T00:00:00'), exam=new Date(examValue+'T00:00:00');
+      const days=Math.floor((exam-birth)/86400000);
+      let months=(exam.getFullYear()-birth.getFullYear())*12+(exam.getMonth()-birth.getMonth());
+      if(exam.getDate()<birth.getDate()) months--;
+      return {days,months,years:Math.floor(months/12),remainder:months%12,label:`${Math.floor(months/12)} tahun ${months%12} bulan`};
+    }
+    function adjustMeasurement(ageMonths, method, value){
+      if(ageMonths<24 && method==='Berdiri / Tinggi Badan') return {value:+(value+.7).toFixed(1),adjusted:true,note:'Pengukuran berdiri disesuaikan +0,7 cm menjadi panjang badan untuk keperluan perhitungan WHO.'};
+      if(ageMonths>=24 && method==='Terlentang / Panjang Badan') return {value:+(value-.7).toFixed(1),adjusted:true,note:'Pengukuran terlentang disesuaikan -0,7 cm menjadi tinggi badan untuk keperluan perhitungan WHO.'};
+      return {value,adjusted:false,note:'Tidak diperlukan penyesuaian metode pengukuran.'};
+    }
+    function findLms(dataset, ageMonths){
+      if(!dataset.length) return null;
+      const sorted=[...dataset].sort((a,b)=>a.Age_Months-b.Age_Months);
+      let lower=sorted[0], upper=sorted[sorted.length-1];
+      for(let i=0;i<sorted.length-1;i++){if(ageMonths>=sorted[i].Age_Months&&ageMonths<=sorted[i+1].Age_Months){lower=sorted[i];upper=sorted[i+1];break}}
+      if(lower===upper)return lower;
+      const t=(ageMonths-lower.Age_Months)/(upper.Age_Months-lower.Age_Months);
+      return {L:lower.L+(upper.L-lower.L)*t,M:lower.M+(upper.M-lower.M)*t,S:lower.S+(upper.S-lower.S)*t};
+    }
+    function lmsZScore(x, ref){if(!ref)return null;return ref.L===0?Math.log(x/ref.M)/ref.S:(Math.pow(x/ref.M,ref.L)-1)/(ref.L*ref.S)}
+    function calculateLengthHeightForAgeZScore(gender,ageMonths,value){
+      return lmsZScore(value,findLms(gender==='Laki-laki'?WHO_LHFA_BOYS:WHO_LHFA_GIRLS,ageMonths));
+    }
+    function calculateWeightForAgeZScore(gender,ageMonths,value){
+      return lmsZScore(value,findLms(gender==='Laki-laki'?WHO_WFA_BOYS:WHO_WFA_GIRLS,ageMonths));
+    }
+    function classifyStunting(z){return z>=-2?'Normal menurut indikator tinggi/panjang badan menurut umur':z>=-3?'Pendek / stunted menurut indikator tinggi/panjang badan menurut umur':'Sangat pendek / severely stunted menurut indikator tinggi/panjang badan menurut umur'}
+    function classifyWeightForAge(z){return z>=-2?'Berat badan menurut umur tidak berada pada kategori berat badan kurang':z>=-3?'Berat badan kurang':'Berat badan sangat kurang'}
+    function validateForm(){
+      const fields=['gender','birth-date','exam-date','village','district','weight','measure-method','height'];
+      for(const id of fields){if(!document.getElementById(id).value.trim()) return 'Mohon lengkapi semua data pemeriksaan yang wajib diisi.'}
+      const age=calculateAge(document.getElementById('birth-date').value,document.getElementById('exam-date').value);
+      if(age.days<0)return 'Tanggal lahir tidak valid.';
+      if(age.months<0||age.months>=60)return 'Versi PANTAU saat ini dirancang untuk skrining pertumbuhan anak usia 0–59 bulan.';
+      const method=document.getElementById('measure-method').value;
+      if(age.months<24&&method==='Berdiri / Tinggi Badan')return 'Anak berusia kurang dari 2 tahun. Untuk penilaian pertumbuhan linear, gunakan pengukuran panjang badan terlentang.';
+      if(age.months>=24&&method==='Terlentang / Panjang Badan')return 'Anak berusia 2 tahun atau lebih. Untuk penilaian pertumbuhan linear, gunakan pengukuran tinggi badan berdiri.';
+      if(+document.getElementById('weight').value<=0||+document.getElementById('weight').value>40)return 'Berat badan harus berupa angka positif pada rentang realistis.';
+      if(+document.getElementById('height').value<=0)return 'Panjang atau tinggi badan harus berupa angka positif.';
+      return null;
+    }
+    async function saveScreeningResult(record){
+      const result=await window.dataSdk.create(record);
+      if(!result.isOk) throw new Error('Data belum dapat disimpan ke Canva Sheet. Silakan coba kembali.');
+    }
+    function displayResult(data){
+      const refAvailable=data.zLHFA!==null;
+      const statusCopy=refAvailable?(data.zLHFA>=-2?'Panjang/tinggi badan anak sesuai dengan standar pertumbuhan menurut umur.':data.zLHFA>=-3?'Panjang/tinggi badan anak berada di bawah batas -2 SD menurut standar pertumbuhan.':'Panjang/tinggi badan anak berada di bawah batas -3 SD menurut standar pertumbuhan.'):'Referensi pertumbuhan belum dapat digunakan.';
+      const result=document.getElementById('result-section'),card=document.getElementById('result-card');
+      result.classList.remove('result-hidden');card.className='soft-card p-6 sm:p-8 '+(refAvailable?(data.zLHFA>=-2?'status-normal':data.zLHFA>=-3?'status-watch':'status-danger'):'status-pending');
+      document.getElementById('result-status-badge').textContent=refAvailable?'SKRINING SELESAI':'Referensi belum tersedia';
+      const statusLabel=refAvailable?(data.zLHFA>=-2?'NORMAL':data.zLHFA>=-3?'PENDEK / STUNTED':'SANGAT PENDEK / SEVERELY STUNTED'):'REFERENSI BELUM TERSEDIA';
+      document.getElementById('result-status-label').textContent=statusLabel;
+      document.getElementById('score-marker').style.left=refAvailable?Math.max(2,Math.min(98,(data.zLHFA+4)*20))+'%':'50%';
+      document.getElementById('result-summary').innerHTML=[
+        ['ID Pemeriksaan',data.id],['Tanggal Pemeriksaan',data.examDate],['Jenis Kelamin',data.gender],['Usia',data.age.label],
+        ['Desa/Kelurahan',data.village],['Kabupaten/Kota',data.district],['Berat Badan',data.weight+' kg'],['Panjang/Tinggi',data.height+' cm — '+data.method]
+      ].map(([a,b])=>`<div class="rounded-xl bg-white border border-slate-200 p-3"><p class="text-slate-500">${a}</p><b class="text-[#173d56]">${b}</b></div>`).join('');
+      document.getElementById('lhfa-value').textContent=refAvailable?`Z-score: ${data.zLHFA.toFixed(2)} SD`:'Z-score: Belum tersedia';
+      document.getElementById('lhfa-category').textContent=refAvailable?data.lhfa:'Kategori menunggu dataset LMS WHO resmi.';
+      document.getElementById('wfa-value').textContent=refAvailable?`Z-score: ${data.zWFA.toFixed(2)} SD`:'Z-score: Belum tersedia';
+      document.getElementById('wfa-category').textContent=refAvailable?data.wfa:'Weight-for-age merupakan indikator tambahan dan bukan penentu utama klasifikasi stunting.';
+      document.getElementById('recommendation').innerHTML='<h3 class="font-bold">REKOMENDASI TINDAK LANJUT</h3><p class="mt-2">'+(refAvailable&&data.zLHFA>=-2?'Pantau pertumbuhan secara berkala, berikan makanan bergizi dan beragam, serta lakukan pengukuran ulang sesuai jadwal pelayanan kesehatan.':'Konsultasikan hasil kepada tenaga kesehatan, lakukan pengukuran ulang untuk memastikan akurasi, dan evaluasi pola makan serta pertumbuhan anak secara menyeluruh.')+'</p>';
+      document.getElementById('interpretation').textContent=refAvailable?statusCopy+' Hasil ini merupakan skrining awal dan bukan diagnosis medis. Konsultasikan hasil kepada tenaga kesehatan untuk penilaian lebih lanjut.':'Referensi pertumbuhan belum dapat digunakan. Hasil tidak diklasifikasikan.';
+      result.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+    function resetForm(){
+      document.getElementById('screening-form').reset();document.getElementById('exam-id').value=generateExamID();document.getElementById('exam-date').value=new Date().toISOString().slice(0,10);
+      document.getElementById('age-display').classList.add('hidden');document.getElementById('form-error').classList.add('hidden');document.getElementById('result-section').classList.add('result-hidden');
+    }
+    function updateDashboard(){
+      const empty=document.getElementById('dashboard-empty'),content=document.getElementById('dashboard-content');
+      if(!records.length){empty.classList.remove('hidden');content.classList.add('hidden');return} empty.classList.add('hidden');content.classList.remove('hidden');
+      const count=(fn)=>records.filter(fn).length;
+      document.getElementById('stat-total').textContent=records.length;document.getElementById('stat-male').textContent=count(r=>r.jenis_kelamin==='Laki-laki');document.getElementById('stat-female').textContent=count(r=>r.jenis_kelamin==='Perempuan');document.getElementById('stat-underweight').textContent=count(r=>r.kategori_wfa==='Berat badan kurang'||r.kategori_wfa==='Berat badan sangat kurang');
+      renderBars('lhfa-chart',group(records,r=>r.kategori_lhfa||'Menunggu referensi'));renderBars('district-chart',group(records,r=>r.kabupaten_kota));renderBars('trend-chart',group(records,r=>r.tanggal_pemeriksaan?.slice(0,7)||'Tidak diketahui'));
+    }
+    function group(arr,key){return arr.reduce((o,x)=>{const k=key(x);o[k]=(o[k]||0)+1;return o},{})}
+    function renderBars(id,obj){const max=Math.max(...Object.values(obj));document.getElementById(id).innerHTML=Object.entries(obj).map(([k,v])=>`<div><div class="flex justify-between gap-3 text-sm mb-1"><span>${k}</span><b>${v}</b></div><div class="chart-bar"><div class="chart-fill" style="width:${v/max*100}%"></div></div></div>`).join('')}
+    const dataHandler={onDataChanged(data){records=data;updateDashboard()}};
+
+    document.addEventListener('DOMContentLoaded',async()=>{
+      lucide.createIcons();
+      document.getElementById('faq-list').innerHTML=FAQS.map(([q,a])=>`<article class="faq-item soft-card p-5"><button class="w-full flex justify-between text-left font-bold" onclick="toggleAccordion(this)"><span>${q}</span><i data-lucide="chevron-down" class="faq-chevron"></i></button><div class="faq-answer pt-4 text-[#536d7e] leading-relaxed">${a}</div></article>`).join('');
+      lucide.createIcons();resetForm();
+      const init=await window.dataSdk.init(dataHandler);
+      if(!init.isOk) document.getElementById('reference-status').textContent='Canva Sheet belum dapat dihubungkan. Pemeriksaan tidak akan diklaim tersimpan.';
+      ['birth-date','exam-date'].forEach(id=>document.getElementById(id).addEventListener('change',()=>{const b=document.getElementById('birth-date').value,e=document.getElementById('exam-date').value;if(b&&e){const a=calculateAge(b,e);if(a.days>=0){const d=document.getElementById('age-display');d.textContent='Usia saat pemeriksaan: '+a.label+' ('+a.days+' hari)';d.classList.remove('hidden')}}}));
+      document.getElementById('screening-form').addEventListener('submit',async(e)=>{
+        e.preventDefault();const error=validateForm(),errorBox=document.getElementById('form-error');if(error){errorBox.textContent=error;errorBox.classList.remove('hidden');return}errorBox.classList.add('hidden');
+        const btn=e.submitter;btn.disabled=true;btn.querySelector('.btn-label').textContent='Menghitung...';
+        const age=calculateAge(document.getElementById('birth-date').value,document.getElementById('exam-date').value),height=+document.getElementById('height').value,weight=+document.getElementById('weight').value,method=document.getElementById('measure-method').value,adj=adjustMeasurement(age.months,method,height),gender=document.getElementById('gender').value;
+        const zLHFA=calculateLengthHeightForAgeZScore(gender,age.months,adj.value),zWFA=calculateWeightForAgeZScore(gender,age.months,weight),lhfa=zLHFA===null?'Menunggu dataset WHO resmi':classifyStunting(zLHFA),wfa=zWFA===null?'Menunggu dataset WHO resmi':classifyWeightForAge(zWFA);
+        const data={id:document.getElementById('exam-id').value,examDate:document.getElementById('exam-date').value,gender,age,village:document.getElementById('village').value.trim(),district:document.getElementById('district').value.trim(),weight,height,method,adjustment:adj,zLHFA,zWFA,lhfa,wfa};
+        const record={id_pemeriksaan:data.id,timestamp:new Date().toISOString(),jenis_kelamin:gender,tanggal_lahir:document.getElementById('birth-date').value,tanggal_pemeriksaan:data.examDate,usia_hari:age.days,usia_bulan:age.months,usia_tahun_bulan:age.label,desa_kelurahan:data.village,kabupaten_kota:data.district,berat_badan_kg:weight,metode_pengukuran:method,panjang_tinggi_cm:height,nilai_disesuaikan_cm:adj.value,indikator_lhfa:age.months<24?'Length-for-Age':'Height-for-Age',zscore_lhfa:zLHFA===null?null:+zLHFA.toFixed(4),kategori_lhfa:lhfa,zscore_wfa:zWFA===null?null:+zWFA.toFixed(4),kategori_wfa:wfa,status_skrining:zLHFA===null?'Menunggu referensi WHO resmi':lhfa,catatan:adj.note,sumber_referensi:'WHO Child Growth Standards 0–5 years (dataset LMS perlu dimasukkan)'};
+        try{await saveScreeningResult(record);displayResult(data)}catch(err){errorBox.textContent=err.message;errorBox.classList.remove('hidden')}finally{btn.disabled=false;btn.querySelector('.btn-label').textContent='Hitung Hasil'}
+      });
+    });
+  </script>
+ </body>
+</html>
